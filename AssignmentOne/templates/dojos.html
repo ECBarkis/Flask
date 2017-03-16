@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename = 'css/index.css' ) }}">
+		<title>Landing Page</title>
+	</head>
+	<body>
+		<h1>New to Coding Dojo</h1>
+		<form>
+			<label>Username:</label>
+			<input type="text" name="username">
+			<label>Email:</label>
+			<input type="email" name="email">
+			<input type="submit">
+		</form>
+		<img src="{{ url_for( 'static', filename = 'img/mudra.png' ) }}">
+	</body>
+</html>
