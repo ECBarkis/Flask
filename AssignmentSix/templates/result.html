@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Dojo Survey</title>
+		<style type="text/css">
+			body{
+				width: 970px;
+				margin: 0px auto;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Submitted Info</h1>
+		<table>
+			<tr>
+				<td>Name:</td>
+				<td>{{ session[ 'name' ] }}</td>
+			</tr>
+			<tr>
+				<td>Dojo Location:</td>
+				<td>{{ session[ 'loca' ] }}</td>
+			</tr>
+			<tr>
+				<td>Favorite Language:</td>
+				<td>{{ session[ 'lang' ] }}</td>
+			</tr>
+			<tr>
+				<td>Comment:</td>
+				<td>{{ session[ 'comm' ] }}</td>
+			</tr>
+		</table>
+		<form action="/goBack">
+			<input type="submit" value="Go Back">
+		</form>
+	</body>
+</html>
